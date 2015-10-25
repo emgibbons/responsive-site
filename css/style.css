@@ -1,0 +1,154 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+body {
+	background-color: #73777a;
+	font-family: Roboto Condensed;
+	padding: 20px;
+	font-size: 25px;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	border-bottom: 5px solid #7db8f2;
+	padding-bottom: 15px;
+}
+
+@media (max-width: 48.25em) {
+	h1 {
+		font-size: 50px;
+	}
+
+	body {
+		font-size: 15px;
+	}
+	}
+
+.pattern {
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+	color: #032241;
+}
+a:hover {
+	text-decoration: none;
+	color: #032241;
+}
+a:visited {
+	text-decoration: none;
+	color: #032241;
+}
+a:active {
+	text-decoration: none;
+	color: #032241;
+}
+
+
+<!--thanks Brad Frost for the navigation stuff--> 
+a.menu-link {
+  	    float: right;
+		    display: block;
+		    padding: 1em;
+		    text-align: center;
+
+		}
+		nav[role=navigation] {
+			clear: both;
+			-webkit-transition: all 0.3s ease-out;  
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+		}
+		.js nav[role=navigation] {
+			overflow: hidden;
+			max-height: 0;
+		}
+		nav[role=navigation].active {
+			max-height: 15em;
+		}
+		nav[role=navigation] ul {
+			margin: 0;
+			padding: 0;
+			border-top: 1px solid #808080;
+		}
+		nav[role=navigation] li a {
+			display: block;
+			padding: 0.8em;
+			border-bottom: 1px solid #808080;
+		}
+		
+		@media screen and (min-width: 48.25em) {
+			a.menu-link {
+			   display: none;
+			}
+			.js nav[role=navigation] {
+				max-height: none;
+			}
+			nav[role=navigation] ul {
+				margin: 0 0 0 -0.25em;
+				border: 0;
+			}
+			
+			nav[role=navigation]  li {
+				display: inline-block;
+				margin: 0 0.25em;
+			}
+			nav[role=navigation] li a {
+				border: 0;
+			}
+		}
+
+.box {
+	width: 100%;
+	height: 200px;
+	background-color: #73777a;
+	margin-bottom: 20px;
+	font-size: 40px;
+	padding: 20px;
+	
+}
+
+.show-desktop {
+	display: block;
+}
+
+.show-mobile {
+	display: none;
+}
+
+@media (min-width: 48.25em){
+	.show-desktop {
+		display: none;
+	}
+
+	.show-mobile {
+		display: block;
+	}
+}
+
+img {
+	float: left;
+	width: 45%
+
+}
+
+@media (max-width: 48.25em) {
+  .show-desktop img {
+
+    clear: both;
+    width: 100%;  
+    
+  } 
+  .show-mobile img {
+
+  	clear: both;
+  	width: 100%
+  }
+}
+
+
+
